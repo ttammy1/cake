@@ -1,0 +1,160 @@
+/* ========RWD========= */
+@media (max-width: 768px){
+
+    /* =======RWD header======= */
+       .header-content {
+           position: relative;
+       }
+       
+       /* 顯示漢堡 */
+       .header-content .fa {
+           display: block;
+           order: 1;
+       }
+   
+       /* Logo 在中間 */
+       .logo {
+           order: 2;
+       }
+       
+       /* header-nav-out 在右邊 */
+       .header-nav-out {
+           order: 3;
+           
+       }
+   
+       /* 切換 Logo */
+       .logo img:first-child {
+           display: none;
+       }
+       
+       .logo .logo-small {
+           display: block;
+       }
+   
+       /* 隱藏 nav，但保留 cart */
+       .header-nav {
+           display: none;
+           background-color: white;
+           position: absolute;
+           left: 0;
+           right: 0;
+           top: 56px;
+           box-shadow: 0 3px 5px rgba(0,0,0,0.1);
+           z-index: 999;
+       }
+       
+       /* hover 顯示選單（改成選擇 .header-nav-out）*/
+       .header-content .fa:hover ~ .header-nav-out .header-nav {
+           display: block;
+       }
+       
+       .header-nav-out .header-nav:hover {
+           display: block;
+       }
+       
+       /* 選單項目直排 */
+       .header-nav ul {
+           flex-direction: column;
+           gap: 0;
+           width: 100%;
+       }
+       
+       .header-nav li {
+           width: 100%;
+           padding: 10px 0;
+           border-bottom: 1px solid #EAF0ED;
+       }
+       
+       .header-nav a {
+           display: block;
+          
+           text-align: center;
+       }
+/* =======RWD banner======= */
+.banner{
+    margin-bottom: 0px;
+}
+.banner h1{
+    font-size: 30px;
+}
+
+/* =======RWD meau======= */
+.top{
+    flex-direction: column;
+}
+
+.category{
+    width: 100%;
+}
+.category a{
+    width: 100%;
+}
+
+/* =======RWD product======= */
+.product ul{
+    justify-content: center;
+    padding: 0 30px;
+    gap: 30px;
+    
+}
+
+/* ======RWD page======= */
+.page ul{
+    justify-content: center;
+}
+   /* ========RWD 電子報========= */
+   
+
+
+/* Form 樣式 */
+
+    .newsletter {
+        height: auto;
+        padding: 24px 0;
+    }
+    
+    .newsletter-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .newsletter-form {
+        width: 100%;
+
+    }
+    
+    .input-group {
+        width: 100%;
+    }
+
+/* =========footer========= */
+.footer-right{
+    display: none;
+}
+
+.footer-left img{
+    margin-bottom: 40px;
+}
+
+.footer-bottom{
+    flex-direction: column;
+    align-items: start;
+    padding-left: 30px;
+    gap: 24px;
+}
+
+
+
+   }
+
+
+@media (max-width:560px){
+    .banner h1{
+        font-size: 24px;
+    }
+
+    
+}
+   
+   

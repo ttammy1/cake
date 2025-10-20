@@ -1,0 +1,414 @@
+@import url('reset.css');
+
+button {
+    background: none;
+    border: none;
+    outline: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+/* 移除點擊時的效果 */
+button:focus {
+    outline: none;
+}
+/* -------header------- */
+header{
+    position: sticky;
+    z-index: 1000;
+    top: 0;
+    background-color: white;
+    padding: 0 30px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    
+}
+
+.header-content{
+    max-width: 1024px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.logo img:first-child{
+    height: 40px;
+}
+
+.header-nav-out{
+    display: flex;
+    gap: 80px;
+}
+
+.cart img{
+    width: 24px;
+}
+.header-nav{
+    display: flex;
+    align-items: center;
+    gap: 80px;
+}
+.header-nav ul{
+    display: flex;
+    gap: 40px;
+    
+}
+
+.header-nav a{
+    text-decoration: none;
+    font-size: 16px;
+    color: #3F5D45;
+    font-weight: 500;
+    padding: 15px 12px;
+}
+.header-nav a:not(.cart):hover {
+    border-bottom: 3px solid #FFE180;
+}
+
+.header-content .fa {
+    display: none;
+    font-size: 24px;
+    color: #3F5D45;
+}
+.logo-small{
+    height: 18px; /* 設定高度 */
+    display: none;
+   
+}
+
+/* ------banner------- */
+.banner{
+   max-width: 1024px;
+   position: relative;
+   margin: 0 auto;
+   margin-bottom: 64px;
+}
+.banner img{
+    width: 100%;;
+    
+}
+.banner h1{
+    font-size: 34px;
+    writing-mode: vertical-rl;
+    color: #3F5D45;
+    font-family: "Noto Serif TC", serif;
+    line-height: 1.5;
+    letter-spacing: 5px;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+}
+
+/* -------section meau------- */
+.product-wrapper{
+    max-width: 1024px;
+    margin: 0 auto;
+   
+    
+}
+.top{
+    display: flex;
+    gap: 20px;
+}
+.category{
+    width: 300px;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.category h2{
+    background-color: #3F5D45;
+    color: white;
+    text-align: center;
+    padding: 16px 0;
+    font-weight: 500;
+}
+.category a{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    width: 300px;
+    height: 65px;
+    border: 1px solid #EAF0ED;
+    color: #3F5D45;
+    font-weight: 500;
+}
+.category li:first-child a{
+    background-color: #EAF0ED;
+}
+.category a:hover{
+    background-color: #EAF0ED;
+}
+
+
+/* -------section product------- */
+.product ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.product li{
+    flex: 1 1 calc(50% - 10px); /* flex-grow flex-shrink flex-basis */
+    min-width: 280px; /* 設定最小寬度 */
+    max-width: 350px; /* 設定最大寬度 */
+}
+.product-image{
+    position: relative;
+    width: 100%;
+    display: block;
+   
+}
+.product-image img{
+    width: 100%; /* 讓圖片寬度 100% */
+    height: auto; /* 高度自動 */
+    display: block;
+  
+}
+.product-image a{
+    text-decoration: none;
+}
+
+.product-image span{
+    writing-mode: vertical-lr;
+    position: absolute;
+    background-color: #3F5D45;
+    color: white;
+    padding: 16px 10px;
+    letter-spacing: 4px;
+    top: 0;
+    left: 20px;
+
+}
+.like{
+    position: absolute;
+    padding: 15px;
+    top: 0;
+    right: 0;
+}
+.like:hover{
+    background-color: #EAF0ED;
+}
+
+
+
+.product-info{
+    display: flex;
+    text-decoration: none;
+    color: #3F5D45;
+    padding: 16px;
+    justify-content: space-between; /* 改成左右分開 */
+    align-items: center;
+    font-size: 20px;
+    gap: 10px;
+}
+.product-info span{
+    font-weight: 700;
+
+}
+
+.add-cart{
+    background-color: #EAF0ED;
+    color: #3F5D45;
+    display: block;
+    height: 65px;
+    width: 100%;
+    font-size: 20px;
+    font-weight: 700;
+    transition: background-color 0.3s;
+}
+
+.add-cart:hover{
+    background-color: #FFE180;
+}
+
+
+/* -------page------- */
+.page{
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+.page ul{
+    display: flex;
+    justify-content: end;
+}
+.page a{
+    display: block;
+    text-decoration: none;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    border: 0.7px solid #EAF0ED;
+}
+.page img{
+    padding: 18px 0;
+}
+.page-active{
+    color: white;
+    background-color: #3F5D45;
+    pointer-events: none;
+}
+
+.pages{
+    color: #3F5D45;
+}
+.pages:hover, .page-prev:hover , .page-next:hover{
+    background-color: #EAF0ED;
+}
+
+
+
+/* --------電子報-------- */
+
+.newsletter{
+    height: 116px;
+    background-color: #3F5D45;
+    display: flex;
+    align-items: center;
+    
+}
+
+.newsletter-container{
+    display: flex;
+    max-width: 1024px;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 30px;
+}
+
+.newsletter-text{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.newsletter-text img{
+    width: 40px;
+    height: 40px;
+}
+
+.newsletter-text h3{
+    color: #EAF0ED;
+    font-size: 24px;
+    font-weight: 200;
+    letter-spacing: 1.5px;
+}
+
+/* Form 樣式 */
+.newsletter-form {
+    display: flex;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    gap: 10px; 
+    width: 400px;
+}
+
+
+.input-group input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 12px 10px;
+   
+   
+   
+    
+}
+
+.input-group input::placeholder {
+    color: #8DA291;
+}
+
+.input-group button {
+    background-color: #FFE180;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    
+}
+
+.input-group button:hover {
+    background-color: #EFB73E;
+}
+
+.email{
+    padding-left: 10px;
+}
+
+/* -------footer-------- */
+
+footer{
+    background-color: #EAF0ED;
+}
+
+.footer-container{
+    max-width: 1024px;
+    margin: 0 auto;
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;  /* 加上這行，讓左右兩邊分散對齊 */
+    padding-left: 30px;
+}
+
+.footer-left img{
+    width: 170px;
+    margin-bottom: 115px;
+}
+
+.footer-left ul{
+    margin-bottom: 30px;
+}
+
+.footer-left li{
+    color: #3F5D45;
+    line-height: 1.5;
+}
+
+
+
+.footer-right h2{
+    color: #3F5D45;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-family: "Noto Serif TC", serif;
+    line-height: 1.5;
+    letter-spacing: 4px;
+    font-size: 20px;
+    padding-right: 22px;
+}
+
+.footer-bottom{
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #3F5D45;
+    padding-bottom: 30px;
+    padding-left: 16px;
+    padding-right: 24px;
+
+}
+.footer-bottom a{
+    text-decoration: none;
+    margin-right: 15px;
+}
+.footer-bottom img{
+    width: 32px;
+    
+}
+
+

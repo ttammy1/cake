@@ -1,0 +1,370 @@
+@import url('reset.css');
+
+button {
+    background: none;
+    border: none;
+    outline: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+/* 移除點擊時的效果 */
+button:focus {
+    outline: none;
+}
+/* -------header------- */
+header{
+    position: sticky;
+    z-index: 1000;
+    top: 0;
+    background-color: white;
+    padding: 0 30px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    
+}
+
+.header-content{
+    max-width: 1024px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.logo img:first-child{
+    height: 40px;
+}
+
+.header-nav-out{
+    display: flex;
+    gap: 80px;
+}
+
+.cart img{
+    width: 24px;
+}
+.header-nav{
+    display: flex;
+    align-items: center;
+    gap: 80px;
+}
+.header-nav ul{
+    display: flex;
+    gap: 40px;
+    
+}
+
+.header-nav a{
+    text-decoration: none;
+    font-size: 16px;
+    color: #3F5D45;
+    font-weight: 500;
+    padding: 15px 12px;
+}
+.header-nav a:not(.cart):hover {
+    border-bottom: 3px solid #FFE180;
+}
+
+.header-content .fa {
+    display: none;
+    font-size: 24px;
+    color: #3F5D45;
+}
+.logo-small{
+    height: 18px; /* 設定高度 */
+    display: none;
+   
+}
+
+/* --------main cart------- */
+main{
+    display: flex;
+    gap: 10px;
+    margin: 0 auto;
+    max-width: 1024px;
+    margin: 60px auto;
+    
+}
+
+.cart-page{
+    max-width: 710px;
+    width: 100%;
+    color: #3F5D45;
+    
+    
+   
+}
+
+.cart-page h2{
+    color: #3F5D45;
+    font-size: 24px;
+    font-weight: 500;
+    background-color: #EAF0ED;
+    padding: 16px 0;
+    text-align: center;
+    margin-bottom: 12px;
+
+}
+
+.cart-page li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   padding: 20px 0;  
+   margin: 0 16px;
+   border-bottom: 1px solid #EAF0ED; 
+
+}
+.cart-page li:last-child{
+    border-bottom: none;
+}
+
+.cart-page img{
+    width: 110px;
+    height: 110px;
+    margin-right: 16px;
+}
+
+.cart-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 260px;
+    width: 100%;
+}
+.cart-item-text h3{
+    margin-bottom: 8px;
+    font-size: 18px;
+}
+
+.cart-add {
+    display: flex;
+    
+}
+.cart-add span,.cart-add button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    width: 48px;
+    height: 48px;
+    border: 1px solid #EAF0ED;
+    color: #3F5D45;
+}   
+.cart-add button:hover{
+    background-color: #EAF0ED;
+}   
+
+.cake-price{
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.cart-add button {
+    font-size: 20px;
+}
+
+
+.cart-page i{
+    color: #8DA291;
+    font-size: 14px;
+}
+
+
+/* ------main checkout----- */
+
+
+.checkout{
+    max-width: 300px;
+    width: 100%;
+    height: 259px;
+    background-color: #3F5D45;
+}
+
+.checkout{
+    color: #EAF0ED;
+
+}
+.checkout h2{
+    font-size: 24px;
+    text-align: center;
+    padding: 20px 0;
+    margin: 0 16px;
+    border-bottom: 1px solid #EAF0ED;
+}
+.checkout li{
+    display: flex;
+    margin: 18px 16px;
+    justify-content: space-between;
+}
+
+.checkout-total span{
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.checkout a{
+    background-color: #FFE180;
+    color: #3F5D45;
+    font-size: 24px;
+    font-weight: 500;
+    display: flex;
+    width: 100%;
+    padding: 18px 0;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+
+/* --------電子報-------- */
+
+.newsletter{
+    height: 116px;
+    background-color: #3F5D45;
+    display: flex;
+    align-items: center;
+    
+}
+
+.newsletter-container{
+    display: flex;
+    max-width: 1024px;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 30px;
+}
+
+.newsletter-text{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.newsletter-text img{
+    width: 40px;
+    height: 40px;
+}
+
+.newsletter-text h3{
+    color: #EAF0ED;
+    font-size: 24px;
+    font-weight: 200;
+    letter-spacing: 1.5px;
+}
+
+/* Form 樣式 */
+.newsletter-form {
+    display: flex;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    gap: 10px; 
+    width: 400px;
+}
+
+
+.input-group input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 12px 10px;
+   
+   
+   
+    
+}
+
+.input-group input::placeholder {
+    color: #8DA291;
+}
+
+.input-group button {
+    background-color: #FFE180;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    
+}
+
+.input-group button:hover {
+    background-color: #EFB73E;
+}
+
+.email{
+    padding-left: 10px;
+}
+
+/* -------footer-------- */
+
+footer{
+    background-color: #EAF0ED;
+}
+
+.footer-container{
+    max-width: 1024px;
+    margin: 0 auto;
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;  /* 加上這行，讓左右兩邊分散對齊 */
+    padding-left: 30px;
+}
+
+.footer-left img{
+    width: 170px;
+    margin-bottom: 115px;
+}
+
+.footer-left ul{
+    margin-bottom: 30px;
+}
+
+.footer-left li{
+    color: #3F5D45;
+    line-height: 1.5;
+}
+
+
+
+.footer-right h2{
+    color: #3F5D45;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-family: "Noto Serif TC", serif;
+    line-height: 1.5;
+    letter-spacing: 4px;
+    font-size: 20px;
+    padding-right: 22px;
+}
+
+.footer-bottom{
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #3F5D45;
+    padding-bottom: 30px;
+    padding-left: 16px;
+    padding-right: 24px;
+
+}
+.footer-bottom a{
+    text-decoration: none;
+    margin-right: 15px;
+}
+.footer-bottom img{
+    width: 32px;
+    
+}
+
+

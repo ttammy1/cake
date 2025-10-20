@@ -1,0 +1,294 @@
+@import url('reset.css');
+
+button {
+    background: none;
+    border: none;
+    outline: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+/* 移除點擊時的效果 */
+button:focus {
+    outline: none;
+}
+/* -------header------- */
+header{
+    position: sticky;
+    z-index: 1000;
+    top: 0;
+    background-color: white;
+    padding: 0 30px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    
+}
+
+.header-content{
+    max-width: 1024px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.logo img:first-child{
+    height: 40px;
+}
+
+.header-nav-out{
+    display: flex;
+    gap: 80px;
+}
+
+.cart img{
+    width: 24px;
+}
+.header-nav{
+    display: flex;
+    align-items: center;
+    gap: 80px;
+}
+.header-nav ul{
+    display: flex;
+    gap: 40px;
+    
+}
+
+.header-nav a{
+    text-decoration: none;
+    font-size: 16px;
+    color: #3F5D45;
+    font-weight: 500;
+    padding: 15px 12px;
+}
+.header-nav a:not(.cart):hover {
+    border-bottom: 3px solid #FFE180;
+}
+
+.header-content .fa {
+    display: none;
+    font-size: 24px;
+    color: #3F5D45;
+}
+.logo-small{
+    height: 18px; /* 設定高度 */
+    display: none;
+   
+}
+
+/* --------main--------- */
+main{
+    max-width: 1024px;
+    margin: 0 auto;
+    background-image: url('../img/success-bg.avif');
+    background-size: 1024px auto;
+    background-position:center ;
+    height: 501px;
+    margin-bottom: 60px;
+    
+
+}
+
+.main-container{
+    color: #3F5D45;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding-top:128px;
+   
+}
+
+main h1{
+    font-size: 40px;
+    font-family: "Noto Serif TC", serif;
+    margin-bottom: 52px;
+}
+
+.check {
+    display: flex;
+    gap: 50px;
+    margin-bottom: 32px;
+    position: relative;
+}
+
+.check i {
+    position: relative;
+    font-size: 24px; 
+}
+
+/* 只在前兩個圖標後面加線條 */
+.check i:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: calc(100%); 
+    width: 50px; 
+    height: 1px;
+    background-color: #8DA291;
+}
+
+.main-container button{
+    background-color: #FFE180;
+    color: #3F5D45;
+    font-weight: 500;
+    font-size: 22px;
+    width: 300px;
+    height: 65px;
+
+}
+
+
+
+
+
+/* --------電子報-------- */
+
+.newsletter{
+    height: 116px;
+    background-color: #3F5D45;
+    display: flex;
+    align-items: center;
+    
+}
+
+.newsletter-container{
+    display: flex;
+    max-width: 1024px;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 30px;
+}
+
+.newsletter-text{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.newsletter-text img{
+    width: 40px;
+    height: 40px;
+}
+
+.newsletter-text h3{
+    color: #EAF0ED;
+    font-size: 24px;
+    font-weight: 200;
+    letter-spacing: 1.5px;
+}
+
+/* Form 樣式 */
+.newsletter-form {
+    display: flex;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    gap: 10px; 
+    width: 400px;
+}
+
+
+.input-group input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 12px 10px;
+   
+   
+   
+    
+}
+
+.input-group input::placeholder {
+    color: #8DA291;
+}
+
+.input-group button {
+    background-color: #FFE180;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    
+}
+
+.input-group button:hover {
+    background-color: #EFB73E;
+}
+
+.email{
+    padding-left: 10px;
+}
+
+/* -------footer-------- */
+
+footer{
+    background-color: #EAF0ED;
+}
+
+.footer-container{
+    max-width: 1024px;
+    margin: 0 auto;
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;  /* 加上這行，讓左右兩邊分散對齊 */
+    padding-left: 30px;
+}
+
+.footer-left img{
+    width: 170px;
+    margin-bottom: 115px;
+}
+
+.footer-left ul{
+    margin-bottom: 30px;
+}
+
+.footer-left li{
+    color: #3F5D45;
+    line-height: 1.5;
+}
+
+
+
+.footer-right h2{
+    color: #3F5D45;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-family: "Noto Serif TC", serif;
+    line-height: 1.5;
+    letter-spacing: 4px;
+    font-size: 20px;
+    padding-right: 22px;
+}
+
+.footer-bottom{
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #3F5D45;
+    padding-bottom: 30px;
+    padding-left: 16px;
+    padding-right: 24px;
+
+}
+.footer-bottom a{
+    text-decoration: none;
+    margin-right: 15px;
+}
+.footer-bottom img{
+    width: 32px;
+    
+}
+
+

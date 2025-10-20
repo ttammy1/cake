@@ -1,0 +1,185 @@
+/* ========RWD========= */
+@media (max-width: 768px){
+
+    /* =======RWD header======= */
+       .header-content {
+           position: relative;
+       }
+       
+       /* 顯示漢堡 */
+       .header-content .fa {
+           display: block;
+           order: 1;
+       }
+   
+       /* Logo 在中間 */
+       .logo {
+           order: 2;
+       }
+       
+       /* header-nav-out 在右邊 */
+       .header-nav-out {
+           order: 3;
+           
+       }
+   
+       /* 切換 Logo */
+       .logo img:first-child {
+           display: none;
+       }
+       
+       .logo .logo-small {
+           display: block;
+       }
+   
+       /* 隱藏 nav，但保留 cart */
+       .header-nav {
+           display: none;
+           background-color: white;
+           position: absolute;
+           left: 0;
+           right: 0;
+           top: 56px;
+           box-shadow: 0 3px 5px rgba(0,0,0,0.1);
+           z-index: 999;
+       }
+       
+       /* hover 顯示選單（改成選擇 .header-nav-out）*/
+       .header-content .fa:hover ~ .header-nav-out .header-nav {
+           display: block;
+       }
+       
+       .header-nav-out .header-nav:hover {
+           display: block;
+       }
+       
+       /* 選單項目直排 */
+       .header-nav ul {
+           flex-direction: column;
+           gap: 0;
+           width: 100%;
+       }
+       
+       .header-nav li {
+           width: 100%;
+           padding: 10px 0;
+           border-bottom: 1px solid #EAF0ED;
+       }
+       
+       .header-nav a {
+           display: block;
+          
+           text-align: center;
+       }
+   /* ========RWD BANNER======= */
+   
+   .banner-button{
+    bottom: -252px;
+    left: 0;
+    right: 0;
+   }
+   .banner-button {
+    display: flex;
+    flex: 1;
+    
+   }
+   .banner a{
+    width: 100%;
+   }
+
+   /* ========RWD section======= */
+   .section1 , .section2{
+    height: 700px;
+    background-color: white;
+    margin-bottom: 0;
+   
+   }
+
+   .section1 p, .section2 p{
+    writing-mode: horizontal-tb;
+    order: 3;
+    background-color: #EAF0ED;
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    
+   }
+
+   .section1 h2, .section2 h2{
+    writing-mode: horizontal-tb;
+    order: 1;
+    text-align: center;
+    padding: 30px 0;
+   
+   }
+
+   .section1-content , .section2-content{
+    flex-direction: column;
+    position: static;
+    align-items: center;
+  
+    
+   }
+
+   .section1 img ,.section2 img{
+    height: 250px;
+    width: 100%;
+    margin-left: 0;
+
+    order: 2;
+   }
+
+   .section3 h2{
+    writing-mode: horizontal-tb;
+    text-align: center;
+   }
+
+
+   /* ========RWD PRODUCT======== */
+
+   /* ========RWD 電子報========= */
+   
+
+
+/* Form 樣式 */
+
+    .newsletter {
+        height: auto;
+        padding: 24px 0;
+    }
+    
+    .newsletter-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .newsletter-form {
+        width: 100%;
+
+    }
+    
+    .input-group {
+        width: 100%;
+    }
+
+/* =========footer========= */
+.footer-right{
+    display: none;
+}
+
+.footer-left img{
+    margin-bottom: 40px;
+}
+
+.footer-bottom{
+    flex-direction: column;
+    align-items: start;
+    padding-left: 30px;
+    gap: 24px;
+}
+
+
+
+   }
+   
+   
